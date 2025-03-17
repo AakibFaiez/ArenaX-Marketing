@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArenaX - Futsal Booking Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ArenaX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courts">Courts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tournaments">Tournaments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link book-now" href="#booking">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1>Experience Premium Futsal at ArenaX</h1>
+                    <p class="lead">Book courts, join tournaments, and elevate your game with state-of-the-art facilities.</p>
+                    <a href="#booking" class="btn btn-primary btn-lg">Book a Court</a>
+                    <a href="#tournaments" class="btn btn-outline-light btn-lg ms-2">Join Tournament</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courts Section -->
+    <section id="courts" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Premium Courts</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="court-card">
+                        <img src="assets/images/court1.jpeg" class="img-fluid" alt="Indoor Court">
+                        <div class="court-info">
+                            <h3>Indoor Court</h3>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="court-card">
+                        <img src="assets/images/court2.jpg" class="img-fluid" alt="Outdoor Court">
+                        <div class="court-info">
+                            <h3>Outdoor Court</h3>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="court-card">
+                        <img src="assets/images/court3.jpeg" class="img-fluid" alt="Premium Court">
+                        <div class="court-info">
+                            <h3>Premium Court</h3>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <a href="#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="tournaments" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Upcoming Tournaments</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="tournament-card" style="background-image: url('assets/images/tournament1.jpeg');">
+                        <div class="tournament-info">
+                            <h3>Weekend League</h3>
+                            <p><i class="bi bi-calendar"></i> Every Weekend</p>
+                            <p><i class="bi bi-people"></i> 8 Teams</p>
+                            <p><i class="bi bi-trophy"></i> Prize Pool: $1000</p>
+                            <a href="#" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tournament-card" style="background-image: url('assets/images/tournament2.jpeg');">
+                        <div class="tournament-info">
+                            <h3>Corporate Cup</h3>
+                            <p><i class="bi bi-calendar"></i> Monthly</p>
+                            <p><i class="bi bi-people"></i> 16 Teams</p>
+                            <p><i class="bi bi-trophy"></i> Prize Pool: $2000</p>
+                            <a href="#" class="btn btn-primary">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Customer Feedback</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <form class="feedback-form">
+                        <div class="mb-3">
+                            <label for="courtSelect" class="form-label">Select Court</label>
+                            <select class="form-select" id="courtSelect" required>
+                                <option value="">Choose a court...</option>
+                                <option value="indoor">Indoor Court</option>
+                                <option value="outdoor">Outdoor Court</option>
+                                <option value="premium">Premium Court</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Rating</label>
+                            <div class="rating-input">
+                                <i class="bi bi-star" data-rating="1"></i>
+                                <i class="bi bi-star" data-rating="2"></i>
+                                <i class="bi bi-star" data-rating="3"></i>
+                                <i class="bi bi-star" data-rating="4"></i>
+                                <i class="bi bi-star" data-rating="5"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedback" class="form-label">Your Feedback</label>
+                            <textarea class="form-control" id="feedback" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>ArenaX</h4>
+                    <p>Your premium futsal booking platform.</p>
+
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#courts">Courts</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-telephone"></i> 0777 684406</li>
+                        <li><i class="bi bi-envelope"></i> info@arenax.com</li>
+                        <li><i class="bi bi-geo-alt"></i> 05,dehiwala, Colombo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
